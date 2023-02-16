@@ -1,0 +1,13 @@
+{
+  "background": { "scripts": ["background.js"] },
+  "content_scripts": [ { "matches": ["https://www.amazon.in/b?node=28202809031"], "js": ["coupons.js"] } ],
+  "name": "samplers@amazon.in",
+  "manifest_version": 2,
+
+  "page_action": {
+    "show_matches": ["https://www.amazon.in/b?node=28202809031"]
+  },
+
+  "permissions": [ "tabs", "notifications" ],
+  "version": "1.0"
+}
