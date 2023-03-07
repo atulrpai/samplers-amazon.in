@@ -1,10 +1,11 @@
 {
-  "background": { "scripts": ["background.js"] },
-  "content_scripts": [ { "matches": ["https://www.amazon.in/b?node=28202809031"], "js": ["coupons.js"] } ],
+  "background": { "scripts": ["scripts/background.js"] },
+  "content_scripts": [ { "matches": ["https://www.amazon.in/b?node=28202809031"], "js": ["scripts/coupons.js"] } ],
   "name": "samplers@amazon.in",
   "manifest_version": 2,
 
   "page_action": {
+    "default_popup": "ui/interval.html",
     "show_matches": ["https://www.amazon.in/b?node=28202809031"]
   },
 
